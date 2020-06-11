@@ -4,9 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <we-tooltip value="simple tooltip">
-      <label slot="reference"> Put on this container to see the tooltip </label>
-    </we-tooltip>
+    <we-textarea name={"MyTextArea"} disabled={false} placeholder={"Placeholder here..."} maxLength={10}></we-textarea>
   );
 }
 
