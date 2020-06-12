@@ -13,7 +13,7 @@ import Tab from './tab'
 import Textarea from './textarea'
 import Tooltip from './tooltip'
 
-export default {
+export {
     Accordion,
     Card,
     Checkbox,

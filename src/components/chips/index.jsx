@@ -2,8 +2,8 @@ import React from "react";
 import './../../App.css';
 
 function Chips() {
-    const srcLeft = "prova";
-    const srcRight = "prova";
+    const srcLeft = "https://via.placeholder.com/15";
+    const srcRight = "https://via.placeholder.com/15";
     const label = "label";
     const removeLeft = true;
 
