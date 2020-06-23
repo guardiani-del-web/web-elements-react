@@ -17,7 +17,7 @@ function Radio() {
     return (
         <div class="component">
             <h2>Radio</h2>
-            <we-radio-group name={name} change-callback={radioHandler}>
+            <we-radio-group name={name} change-callback={(value)=>radioHandler(value)}>
                 <we-radio value={radio1}>{radio1}</we-radio>
                 <we-radio checked={checked} disabled={disabled} value={radio2}>{radio2}</we-radio>
                 <we-radio value={radio3}>{radio3}</we-radio>

@@ -23,19 +23,19 @@ function App() {
     <div>
       <h1>Web Components</h1>
       <Accordion/>
-      {/* <Card/> */}
+      {<Card/>}
       <Checkbox/>
       <Chips/>
       <Divider/>
-      {/* <Dropdown/> */}
-      {/* <Modal/> */}
+      {<Dropdown/>}
+      {<Modal/>}
       
       <Radio />
       <Slider/>
       <Switch/>
       <Tab/>
       <Textarea/>
-      {/* <Tooltip/> */}
+      {<Tooltip/>}
     </div>
   );
 }
