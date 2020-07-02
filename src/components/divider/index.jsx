@@ -3,7 +3,7 @@ import './../../App.css';
 
 function Divider() {
     return (
-        <div class="component">
+        <div className="component">
             <h2>Divider</h2>
             <we-divider></we-divider>
         </div>

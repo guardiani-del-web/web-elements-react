@@ -2,19 +2,27 @@ import React from "react";
 import './../../App.css';
 
 function Switch() {
-    const name = 'MySwitch';
-  const enabled = false;
+  
+  const valueGroup = 'valueGroup';
 
-  const switchHandler = value => {
-    console.log('switchHandler', value);
-  }
+  const value1 =  'Switch 1';
+  const value2 = 'Switch 2';
+  const value3 = 'Switch 3';
+  const checked =false;
+
+
+  window.addEventListener('switchGroupCallback', (data) => console.log("switchGroupCallback listener",data));
 
     return (
-        <div class="component">
+        <div className="component">
             <h2>Switch</h2>
-            <we-switch name={name} enabled={enabled} change-callback={switchHandler}></we-switch>
+            <we-switch-group value={valueGroup}>
+    <we-switch value={value1} checked={checked}></we-switch>
+    <we-switch value={value2} checked={checked}></we-switch>
+    <we-switch value={value3} checked={checked}></we-switch>
+  </we-switch-group>
         </div>
     );
 }
 
-export default Switch;
+ export default Switch;

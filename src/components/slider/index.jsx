@@ -15,7 +15,7 @@ function Slider() {
     }
 
     return (
-        <div class="component">
+        <div className="component">
             <h2>Slider</h2>
             <we-slider name={name} disabled={disabled} value={value} min={min} max={max} change-callback={sliderHandler}>
                 {label}

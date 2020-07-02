@@ -24,7 +24,7 @@ function Tab() {
   ];
 
   return (
-    <div class="component">
+    <div className="component">
       <h2>Tab</h2>
       <we-tab-group>
         {tabsData.map((tab, i) => (

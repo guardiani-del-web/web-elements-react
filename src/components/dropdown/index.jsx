@@ -3,7 +3,7 @@ import './../../App.css';
 
 function Dropdown() {
     return (
-        <div class="component">
+        <div className="component">
             <h2>Dropdown</h2>
             <we-dropdown-group>
                 <we-dropdown-item
