@@ -10,14 +10,12 @@ function Checkbox() {
   const checkbox2 = "Apple";
   const checkbox3 = "Pear";
 
-  const checkboxHandler = (value) => {
-    console.log("checkboxHandler", value);
-  };
+  window.addEventListener('checkboxGroupCallback', (data) => console.log("checkboxGroupCallback",data));
 
   return (
-    <div class="component">
+    <div className="component">
       <h2>Checkbox</h2>
-      <we-checkbox-group name={name} change-callback={checkboxHandler}>
+      <we-checkbox-group value={name}>
         <we-checkbox value={checkbox1}>{checkbox1}</we-checkbox>
         <we-checkbox checked={checked} disabled={disabled} value={checkbox2}>
           {checkbox2}
