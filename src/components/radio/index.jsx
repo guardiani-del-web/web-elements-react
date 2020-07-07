@@ -1,5 +1,6 @@
 import React from "react";
 import './../../App.css';
+import { useEventListener } from './../../common';
 
 function Radio() {
     const name = 'Country';
@@ -10,7 +11,8 @@ function Radio() {
     const radio2 = 'Italia';
     const radio3 = 'Germany';
 
-    window.addEventListener('radioGroupCallback', (data) => console.log("radioGroupCallback",data));
+    const element = React.useRef(null);
+  useEventListener(element, "radioGroupCallback", (data) => console.log("radioGroupCallback", data));
 
     return (
         <div className="component">

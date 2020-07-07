@@ -1,5 +1,6 @@
 import React from "react";
 import './../../App.css';
+import { useEventListener } from './../../common';
 
 function Switch() {
   
@@ -10,8 +11,8 @@ function Switch() {
   const value3 = 'Switch 3';
   const checked =false;
 
-
-  window.addEventListener('switchGroupCallback', (data) => console.log("switchGroupCallback listener",data));
+  const element = React.useRef(null);
+  useEventListener(element, "switchGroupCallback", (data) => console.log("switchGroupCallback", data));
 
     return (
         <div className="component">
