@@ -3,7 +3,7 @@ import './../../App.css';
 
 function NavigationDrawer() {
     return (
-        <div class="component">
+        <div className="component">
             <h2>Navigation Drawer</h2>
         </div>
     );

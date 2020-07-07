@@ -22,7 +22,7 @@ function Accordion() {
   const open = false;
 
     return (
-        <div class="component">
+        <div className="component">
             <h2>Accordion</h2>
             <we-accordion-group multiple={multiple}>
                 {accordionData.map((accordion, i) => (

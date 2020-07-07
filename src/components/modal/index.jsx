@@ -3,7 +3,7 @@ import './../../App.css';
 
 function Modal() {
     return (
-        <div class="component">
+        <div className="component">
             <h2>Modal</h2>
             <we-modal>
                 <div>Slot Example</div>

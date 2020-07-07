@@ -3,7 +3,7 @@ import "./../../App.css";
 
 function Tooltip() {
   return (
-    <div class="component">
+    <div className="component">
       <h2>Tooltip</h2>
       <we-tooltip>
         <div slot="reference"> Put on this container to see the tooltip </div>
