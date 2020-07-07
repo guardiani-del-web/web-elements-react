@@ -15,9 +15,9 @@ function Radio() {
   useEventListener(element, "radioGroupCallback", (data) => console.log("radioGroupCallback", data));
 
     return (
-        <div className="component">
+        <div className="component" >
             <h2>Radio</h2>
-            <we-radio-group value={name}>
+            <we-radio-group value={name} ref={element}>
                 <we-radio value={radio1}>{radio1}</we-radio>
                 <we-radio checked={checked} disabled={disabled} value={radio2}>{radio2}</we-radio>
                 <we-radio value={radio3}>{radio3}</we-radio>

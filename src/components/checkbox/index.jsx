@@ -17,7 +17,7 @@ function Checkbox() {
   return (
     <div className="component">
       <h2>Checkbox</h2>
-      <we-checkbox-group value={name}>
+      <we-checkbox-group value={name} ref={element}>
         <we-checkbox value={checkbox1}>{checkbox1}</we-checkbox>
         <we-checkbox checked={checked} disabled={disabled} value={checkbox2}>
           {checkbox2}
