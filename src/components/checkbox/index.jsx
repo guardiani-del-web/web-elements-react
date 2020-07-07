@@ -1,5 +1,6 @@
 import React from "react";
 import "./../../App.css";
+import { useEventListener } from './../../common';
 
 function Checkbox() {
   const name = "Fruits";
@@ -10,7 +11,8 @@ function Checkbox() {
   const checkbox2 = "Apple";
   const checkbox3 = "Pear";
 
-  window.addEventListener('checkboxGroupCallback', (data) => console.log("checkboxGroupCallback",data));
+  const element = React.useRef(null);
+  useEventListener(element, "checkboxGroupCallback", (data) => console.log("checkboxGroupCallback", data));
 
   return (
     <div className="component">

@@ -1,7 +1,9 @@
 import React from "react";
 import "./../../App.css";
+import { useEventListener } from './../../common';
 
-function Chips() {
+function Chips(props) {
+  window.props = props;
   const nameGroup = "chipsGroup";
 
   const removeLeft = true;
@@ -18,14 +20,13 @@ function Chips() {
   const value2 = "chip 2";
   const value3 = "chip 3";
 
-  window.addEventListener("chipsGroupCallback", (data) =>
-    console.log("chipsGroupCallback", data)
-  );
+  const element = React.useRef(null);
+  useEventListener(element, "chipsGroupCallback", (data) => console.log("chipsGroupCallback", data));
 
   return (
     <div className="component">
       <h2>Chips</h2>
-      <we-chips-group value={nameGroup}>
+      <we-chips-group value={nameGroup} ref={element}>
         <we-chips
           value={value1}
           src-img-left={image1}
@@ -41,8 +42,7 @@ function Chips() {
           label={label2}
           remove-left={removeLeft}
           is-selectable={isSelectable}
-        >
-        </we-chips>
+        ></we-chips>
         <we-chips
           value={value3}
           src-img-left={image1}
@@ -50,8 +50,7 @@ function Chips() {
           label={label3}
           remove-left={removeLeft}
           is-selectable={isSelectable}
-        >
-        </we-chips>
+        ></we-chips>
       </we-chips-group>
     </div>
   );
